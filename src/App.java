@@ -12,7 +12,7 @@ public class App {
     public static void main(String[] args) throws Exception {
 
         //fazer conexção com o HTTP  dos Top 10 filmes da imDb
-        String url = "https://raw.githubusercontent.com/alura-cursos/imersao-java-2-api/main/TopMovies.json";
+        String url = "https://imdb-api.com/en/API/Top250Movies/k_05uk3251";
         URI endereco = URI.create(url);
         var client = HttpClient.newHttpClient();
         var request = HttpRequest.newBuilder(endereco).GET().build();
